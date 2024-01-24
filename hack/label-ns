@@ -1,0 +1,4 @@
+
+APP_NS=$(oc project --short)
+oc label namespace  $APP_NS argocd.argoproj.io/managed-by=openshift-gitops
+ 

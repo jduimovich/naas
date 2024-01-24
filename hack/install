@@ -1,0 +1,4 @@
+oc new-project naas
+oc label namespace naas argocd.argoproj.io/managed-by=openshift-gitops
+oc apply -f application.yaml
+
