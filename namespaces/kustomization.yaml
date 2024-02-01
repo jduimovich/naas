@@ -3,3 +3,4 @@ kind: Kustomization
 resources: 
 - ns1.yaml 
 - ns2.yaml 
+- jduimovich.yaml

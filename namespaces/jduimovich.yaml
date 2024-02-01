@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Namespace
+metadata: 
+  labels:
+    argocd.argoproj.io/managed-by: openshift-gitops 
+  name: jduimovich-dev 
+spec:
+  finalizers:
+  - kubernetes 
+---
+apiVersion: v1
+kind: Namespace
+metadata: 
+  labels:
+    argocd.argoproj.io/managed-by: openshift-gitops 
+  name: jduimovich-stage 
+spec:
+  finalizers:
+  - kubernetes 
+---
+apiVersion: v1
+kind: Namespace
+metadata: 
+  labels:
+    argocd.argoproj.io/managed-by: openshift-gitops 
+  name: jduimovich-prod 
+spec:
+  finalizers:
+  - kubernetes 
